@@ -1,0 +1,20 @@
+# GitHub Action Metadata
+#
+#
+# See: https://docs.github.com/actions/creating-actions/metadata-syntax-for-github-actions
+
+---
+name: ts-action
+description: Provide a description here
+author: '@flex-development'
+inputs:
+  token:
+    default: ${{ github.token }}
+    description: github personal access token (PAT)
+    required: true
+runs:
+  main: dist/index.js
+  using: node12
+branding:
+  color: gray-dark
+  icon: package
